@@ -9,19 +9,23 @@ def ecrire_descripteur_csv(nom_fichier, liste_des_descripteurs):
     file.close()
 
 def ajouter_dictionnaire(nom_fichier, liste_des_descripteurs):
-    liste = []
-    file = open(nom_fichier, 'r', encoding='utf-8')
-    lignes = file.readlines()
+    liste = []  # Creation d'une liste vide
+    file = open(nom_fichier, 'r', encoding='utf-8') # Ouverture du fichier contenant les données à exploiter.
+    lignes = file.readlines()   # Lecture de toutes les lignes du fichier CSV
     for i in lignes :
-        lst = i.rstrip().split(',')
-        ligne_temp = {liste_des_descripteurs[0] : lst[1].strip('"'),
+        lst = i.rstrip().split(',') # Supression d'éventuels caractères superflus (ex:"\n",...) puis séparation en ligne à la rencontre d'une virgule (séparateur)
+        
+        # Dans les lignes suivantes je défini un dictionnaire 'ligne_temp' contenant seulement les données correspondantes aux différents descripteurs de l'exo précédent
+        # je récupére alors l'index de chacun des descripteurs dans la liste précedemment créée.
+        # La fonction .strip('"') me permet de supprimer d'éventuels guillemets en trop dans les données pour pouvoir effectuer des recherches pertinentes par la suite.
+        ligne_temp = {liste_des_descripteurs[0] : lst[1].strip('"'),    
                       liste_des_descripteurs[1] : lst[5].strip('"'),
                       liste_des_descripteurs[2] : lst[8].strip('"'),
                       liste_des_descripteurs[3] : lst[9].strip('"'),
                       liste_des_descripteurs[4] : lst[11].strip('"'),
                       liste_des_descripteurs[5] : lst[16].strip('"')}
-        liste.append(ligne_temp)
-    return liste
+        liste.append(ligne_temp)        # J'ajoute chaque dictionnaire dans ma liste finale.
+    return liste                        # Je retourne ma liste contenant tous les dictionnaires.
 
 def affiche_donnes(liste, descripteur, valeur):
     tabl_recherche = []

@@ -48,14 +48,10 @@ def ecrire_fichier_csv(nom_fichier, liste) :
     output_file.close()
 
 
-# Exercice 2 :
-
 liste_des_descripteurs = ['Département', 'Nom reel', 'Code postal', 'Numéro de commune', 'Arrondissement', 'Population en 2012']
 
-# Exercice 3 :
 
 file_name = 'villes_france.csv'
-ecrire_descripteur_csv(file_name, liste_des_descripteurs)
 
 
 # Exercice 4 :

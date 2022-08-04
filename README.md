@@ -8,7 +8,7 @@ Script allowing the analysis and recovery of precise data on French cities. 🔍
     - [Full Export](https://github.com/4strium/Data-Analysis-France#full-export-)
     - [Targeted Export](https://github.com/4strium/Data-Analysis-France#targeted-export-)
 - [Technologies used](https://github.com/4strium/Data-Analysis-France#targeted-export-)
-- [Downloads](https://github.com/4strium/Game-of-Matches#downloads-)
+- [Downloads & Installation](https://github.com/4strium/Game-of-Matches#downloads-)
 
 ## Search Methods :
 You can search for data on one or more French cities, using these different search methods:
@@ -44,7 +44,8 @@ The software offers the option of exporting all the data for all French cities, 
 
 These are therefore useful descriptors for research, in order to reuse this file for future work!
 ### Targeted Export :
-
+The second type of export is that which is targeted, for example admitting that you are looking for information on the department of Finistère (29), then you can export all the data of the cities of the department (and only them) in a `finistere.csv` file!
 ## Technologies used :
 
+## Downloads & Installation :
 

@@ -3,8 +3,8 @@
 Script allowing the analysis and recovery of precise data on French cities. 🔍
 
 - [Search Methods](https://github.com/4strium/Data-Analysis-France#search-methods-)
-- [Obtained Result](https://github.com/4strium/Data-Analysis-France#search-methods-)
-- [Games Modes](https://github.com/4strium/Game-of-Matches#games-modes-)
+- [Obtained Result](https://github.com/4strium/Data-Analysis-France#obtained-result-)
+- [Export](https://github.com/4strium/Game-of-Matches#games-modes-)
     - [Player vs. Player](https://github.com/4strium/Game-of-Matches#player-vs-player-)
     - [Player vs. Computer (random)](https://github.com/4strium/Game-of-Matches#player-vs-computer-random-)
     - [Player vs. Computer (algorithmic)](https://github.com/4strium/Game-of-Matches#player-vs-computer-algorithmic-)
@@ -29,3 +29,16 @@ You can search for data on one or more French cities, using these different sear
 Normally following your search, you should obtain a list containing one or more city data lists!
 
 Under the form : ` [{'Département': '29', 'Nom reel': 'Brest', 'Code postal': '29200', 'Numéro de commune': '019', 'Arrondissement': '1', 'Population en 2012': '142100'}] `
+
+## Export :
+
+Following your search, the software offers to export the data in a new CSV file, and under the name of your choice!
+
+> **Note:** When typing, you can add the filename extension `.csv` **OR NOT**, the program will add it for you in case you forget! ;)
+### Full Export :
+
+### Targeted Export :
+
+## Technologies used :
+
+

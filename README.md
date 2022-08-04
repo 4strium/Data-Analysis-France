@@ -46,6 +46,13 @@ These are therefore useful descriptors for research, in order to reuse this file
 ### Targeted Export :
 The second type of export is that which is targeted, for example admitting that you are looking for information on the department of Finistère (29), then you can export all the data of the cities of the department (and only them) in a `finistere.csv` file!
 ## Technologies used :
+- [CSV](https://en.wikipedia.org/wiki/Comma-separated_values)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Downloads & Installation :
+The easiest and fastest way to use the software is to clone this repository!
 
+How?
+
+
+If you don't have the GitHub CLI, just siply hit the [Download](https://github.com/4strium/Data-Analysis-France/archive/refs/heads/main.zip) button!

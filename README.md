@@ -12,7 +12,7 @@ Script allowing the analysis and recovery of precise data on French cities. 🔍
 
 ## Search Methods :
 You can search for data on one or more French cities, using these different search methods:
-
+<p align='center'>
 |Search Method                           |Example                                    |
 |----------------------------------------|-------------------------------------------|
 |Département / Department                |`29, 45, 75, ...`                          |
@@ -21,6 +21,7 @@ You can search for data on one or more French cities, using these different sear
 |Numéro de Commune / Municipality number |`019, 234, 056, ...`                       |
 |Arrondissement / Borough                |`1, 2, 1, ...`                             |
 |Population / Population (2012)          |`142100, 113300, 2211000, ...`             |
+</p>
 
 > **Note:** The search by postal code **may not work** if it's a city that has **several postal codes** (such as Paris, Orléans, Lyon, ...), in this case you must enter ALL the codes with a `-` between them!
 ## Obtained Result :

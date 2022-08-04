@@ -24,7 +24,7 @@ You can search for data on one or more French cities, using these different sear
 |Arrondissement / Borough                |`1, 2, 1, ...`                             |
 |Population / Population (2012)          |`142100, 113300, 2211000, ...`             |
 
-> **Note:** The search by postal code may not work if it's a city that has several postal codes (such as Paris, Orléans, Lyon, ...), in this case you must enter ALL the codes with a `-` between them!
+> **Note:** The search by postal code **may not work** if it's a city that has **several postal codes** (such as Paris, Orléans, Lyon, ...), in this case you must enter ALL the codes with a `-` between them!
 ## Obtained Result :
 Normally following your search, you should obtain a list containing one or more city data lists!
 

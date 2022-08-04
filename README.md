@@ -54,5 +54,8 @@ The easiest and fastest way to use the software is to clone this repository!
 
 How?
 
+If you have the [GitHub CLI](https://cli.github.com/) installed on your computer, run the following command in your command prompt:
+`gh repo clone 4strium/Data-Analysis-France`
 
-If you don't have the GitHub CLI, just siply hit the [Download](https://github.com/4strium/Data-Analysis-France/archive/refs/heads/main.zip) button!
+If you don't have the GitHub CLI, just simply hit the [Download](https://github.com/4strium/Data-Analysis-France/archive/refs/heads/main.zip) button!
+All you have to do is extract the archive!

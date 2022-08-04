@@ -34,7 +34,15 @@ Following your search, the software offers to export the data in a new CSV file,
 
 > **Note:** When typing, you can add the filename extension `.csv` **OR NOT**, the program will add it for you in case you forget! ;)
 ### Full Export :
+The software offers the option of exporting all the data for all French cities, but only taking into account the following descriptors:
+- Département / Department
+- Nom de la ville / Name of the city 
+- Code Postal / Postal Code
+- Numéro de Commune / Municipality number
+- Arrondissement / Borough 
+- Population / Population (2012)
 
+These are therefore useful descriptors for research, in order to reuse this file for future work!
 ### Targeted Export :
 
 ## Technologies used :

@@ -4,12 +4,10 @@ Script allowing the analysis and recovery of precise data on French cities. 🔍
 
 - [Search Methods](https://github.com/4strium/Data-Analysis-France#search-methods-)
 - [Obtained Result](https://github.com/4strium/Data-Analysis-France#obtained-result-)
-- [Export](https://github.com/4strium/Game-of-Matches#games-modes-)
-    - [Player vs. Player](https://github.com/4strium/Game-of-Matches#player-vs-player-)
-    - [Player vs. Computer (random)](https://github.com/4strium/Game-of-Matches#player-vs-computer-random-)
-    - [Player vs. Computer (algorithmic)](https://github.com/4strium/Game-of-Matches#player-vs-computer-algorithmic-)
-    - [Computer vs. Computer (random)](https://github.com/4strium/Game-of-Matches#computer-vs-computer-random-)
-- [Technologies used](https://github.com/4strium/Game-of-Matches#technologies-used-)
+- [Export](https://github.com/4strium/Data-Analysis-France#export-)
+    - [Full Export](https://github.com/4strium/Data-Analysis-France#full-export-)
+    - [Targeted Export](https://github.com/4strium/Data-Analysis-France#targeted-export-)
+- [Technologies used](https://github.com/4strium/Data-Analysis-France#targeted-export-)
 - [Downloads](https://github.com/4strium/Game-of-Matches#downloads-)
 
 ## Search Methods :

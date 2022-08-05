@@ -61,3 +61,6 @@ How?
 - If you don't have the GitHub CLI, just simply hit the [Download](https://github.com/4strium/Data-Analysis-France/archive/refs/heads/main.zip) button!
 All you have to do is extract the archive!
 
+Finally, all you have to do is run the `main_program.py` program in your favorite IDE, and follow the instructions displayed on the screen!
+
+Good use ! :)

@@ -54,41 +54,87 @@ liste_des_descripteurs = ['Département', 'Nom reel', 'Code postal', 'Numéro de
 file_name = 'villes_france.csv'
 
 
-# Exercice 4 :
 
 resultat1 = ajouter_dictionnaire(file_name, liste_des_descripteurs)
 
 
-# Exercice 5 :
-
 print('--------------------------------------------------------------------------------------------------------------------------------------')
-print('Département = 0 / Nom reel = 1 / Code postal = 2 / Numéro de commune = 3 / Arrondissement = 4 / Population en 2012 = 5')
-question_desc = int(input('Veuillez entrer le numéro correspondant à votre mode de recherche :\n'))
-desc_cherche = liste_des_descripteurs[question_desc]
-print('--------------------------------------------------------------------------------------------------------------------------------------')
-print('Veuillez entrer la valeur de la donnée recherchée (',desc_cherche,') :')
-question_value = input()
-valeur_cherche = str(question_value)
+lang = int(input('Select your langage (0 = english / 1 = français) :\n'))
 
-resultat2 = affiche_donnes(resultat1, desc_cherche, valeur_cherche)
+if lang == 1 :
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Département = 0 / Nom reel = 1 / Code postal = 2 / Numéro de commune = 3 / Arrondissement = 4 / Population en 2012 = 5')
+    question_desc = int(input('Veuillez entrer le numéro correspondant à votre mode de recherche :\n'))
+    desc_cherche = liste_des_descripteurs[question_desc]
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Veuillez entrer la valeur de la donnée recherchée (',desc_cherche,') :')
+    question_value = input()
+    valeur_cherche = str(question_value)
 
-print('--------------------------------------------------------------------------------------------------------------------------------------')
-print('Voici le résultat de votre recherche :\n',resultat2)
+    resultat2 = affiche_donnes(resultat1, desc_cherche, valeur_cherche)
 
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Voici le résultat de votre recherche :\n',resultat2)
 
-# Exercice 6 :
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Voulez-vous exporter les résultats ? ( OUI / NON )\n')
+    question_export = 'forloop'
+    while question_export != 'OUI' or 'NON' or 'oui' or 'non' :
+        question_export = str(input())
+    if question_export == 'OUI' or 'oui' :
+        print('--------------------------------------------------------------------------------------------------------------------------------------')
+        question_export_name = str(input('Sous quel nom de fichier voulez-vous exporter le résultat ? \n'))
+        print('--------------------------------------------------------------------------------------------------------------------------------------')
+        print('Toutes les données = 0 / Juste celles qui correspondent à ma recherche = 1')
+        print("Quelle type d'exportation voulez-vous réaliser ?\n")
+        question_export_type = 2
+        while question_export_type != 0 or 1 :
+            question_export_type = int(input())
 
-print('--------------------------------------------------------------------------------------------------------------------------------------')
-question_export_name = str(input('Sous quel nom de fichier voulez-vous exporter le résultat ? \n'))
-print('--------------------------------------------------------------------------------------------------------------------------------------')
-print('Toutes les données = 0 / Juste celles qui correspondent à ma recherche = 1')
-question_export_type = int(input("Quelle type d'exportation voulez-vous réaliser ?\n"))
+        if  question_export_type == 0 :
+            export_condition = resultat1
+            ecrire_fichier_csv (question_export_name, export_condition)
+        elif question_export_type == 1 :
+            export_condition = resultat2
+            ecrire_fichier_csv (question_export_name, export_condition)
+        else :
+            print('Exportation impossible.')
 
-if  question_export_type == 0 :
-    export_condition = resultat1
-elif question_export_type == 1 :
-    export_condition = resultat2
 else :
-    print('Exportation impossible.')
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Department = 0 / Real name = 1 / Postal code = 2 / Municipality number = 3 / District = 4 / Population in 2012 = 5')
+    question_desc = int(input('Please enter the number corresponding to your search mode:\n'))
+    desc_cherche = liste_des_descripteurs[question_desc]
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Please enter the value of the data sought (',desc_cherche,') :')
+    question_value = input()
+    valeur_cherche = str(question_value)
 
-ecrire_fichier_csv (question_export_name, export_condition)
+    resultat2 = affiche_donnes(resultat1, desc_cherche, valeur_cherche)
+
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Here is the result of your search:\n',resultat2)
+
+    print('--------------------------------------------------------------------------------------------------------------------------------------')
+    print('Do you want to export the results? ( YES / NO )\n')
+    question_export = 'forloop'
+    while question_export != 'YES' or 'NO' or 'yes' or 'no' :
+        question_export = str(input())
+    if question_export == 'YES' or 'yes' :
+        print('--------------------------------------------------------------------------------------------------------------------------------------')
+        question_export_name = str(input('Under what file name do you want to export the result? \n'))
+        print('--------------------------------------------------------------------------------------------------------------------------------------')
+        print('All data = 0 / Just those that match my search = 1')
+        print("What kind of export do you want to do?\n")
+        question_export_type = 2
+        while question_export_type != 0 or 1 :
+            question_export_type = int(input())
+
+        if  question_export_type == 0 :
+            export_condition = resultat1
+            ecrire_fichier_csv (question_export_name, export_condition)
+        elif question_export_type == 1 :
+            export_condition = resultat2
+            ecrire_fichier_csv (question_export_name, export_condition)
+        else :
+            print('Unable to export.')

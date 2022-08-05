@@ -59,7 +59,7 @@ resultat1 = ajouter_dictionnaire(file_name, liste_des_descripteurs)
 
 
 print('--------------------------------------------------------------------------------------------------------------------------------------')
-lang = int(input('Select your langage (0 = english / 1 = français) :\n'))
+lang = int(input('Select your langage (0 = english (default) / 1 = français) :\n'))
 
 if lang == 1 :
     print('--------------------------------------------------------------------------------------------------------------------------------------')
@@ -79,9 +79,11 @@ if lang == 1 :
     print('--------------------------------------------------------------------------------------------------------------------------------------')
     print('Voulez-vous exporter les résultats ? ( OUI / NON )\n')
     question_export = 'forloop'
-    while question_export != 'OUI' or 'NON' or 'oui' or 'non' :
+    while True :
         question_export = str(input())
-    if question_export == 'OUI' or 'oui' :
+        if question_export == 'OUI' or question_export == 'NON' or question_export == 'oui' or question_export == 'non':
+            break
+    if question_export == 'OUI' or question_export == 'oui' :
         print('--------------------------------------------------------------------------------------------------------------------------------------')
         question_export_name = str(input('Sous quel nom de fichier voulez-vous exporter le résultat ? \n'))
         print('--------------------------------------------------------------------------------------------------------------------------------------')
@@ -118,16 +120,18 @@ else :
     print('--------------------------------------------------------------------------------------------------------------------------------------')
     print('Do you want to export the results? ( YES / NO )\n')
     question_export = 'forloop'
-    while question_export != 'YES' or 'NO' or 'yes' or 'no' :
+    while True:
         question_export = str(input())
-    if question_export == 'YES' or 'yes' :
+        if question_export == 'YES' or question_export == 'NO' or question_export == 'yes' or question_export == 'no':
+            break
+    if question_export == 'YES' or question_export == 'yes' :
         print('--------------------------------------------------------------------------------------------------------------------------------------')
         question_export_name = str(input('Under what file name do you want to export the result? \n'))
         print('--------------------------------------------------------------------------------------------------------------------------------------')
         print('All data = 0 / Just those that match my search = 1')
         print("What kind of export do you want to do?\n")
         question_export_type = 2
-        while question_export_type != 0 or 1 :
+        while question_export_type != 0 or question_export_type != 1 :
             question_export_type = int(input())
 
         if  question_export_type == 0 :

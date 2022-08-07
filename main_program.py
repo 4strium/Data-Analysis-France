@@ -90,9 +90,10 @@ if lang == 1 :
         print('Toutes les données = 0 / Juste celles qui correspondent à ma recherche = 1')
         print("Quelle type d'exportation voulez-vous réaliser ?\n")
         question_export_type = 2
-        while question_export_type != 0 or 1 :
+        while True :
             question_export_type = int(input())
-
+            if question_export_type == 0 or question_export_type == 1 :
+                break
         if  question_export_type == 0 :
             export_condition = resultat1
             ecrire_fichier_csv (question_export_name, export_condition)
@@ -131,9 +132,10 @@ else :
         print('All data = 0 / Just those that match my search = 1')
         print("What kind of export do you want to do?\n")
         question_export_type = 2
-        while question_export_type != 0 or question_export_type != 1 :
+        while True :
             question_export_type = int(input())
-
+            if question_export_type == 0 or question_export_type == 1 :
+                break
         if  question_export_type == 0 :
             export_condition = resultat1
             ecrire_fichier_csv (question_export_name, export_condition)
